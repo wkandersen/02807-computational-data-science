@@ -1,0 +1,35 @@
+# Configuration file for sentiment analysis project
+
+# Data paths
+data:
+  raw: "data/raw"
+  processed: "data/processed"
+  external: "data/external"
+
+# Preprocessing settings
+preprocessing:
+  remove_stopwords: false
+  lowercase: true
+  remove_special_chars: true
+  min_word_length: 2
+
+# Sentiment analysis settings
+sentiment_analysis:
+  default_method: "vader"  # Options: vader, textblob, both
+  thresholds:
+    positive: 0.05
+    negative: -0.05
+
+# Visualization settings
+visualization:
+  figure_size:
+    width: 12
+    height: 6
+  style: "whitegrid"
+  color_map: "viridis"
+
+# Model settings
+models:
+  random_seed: 42
+  test_size: 0.2
+  validation_size: 0.1
