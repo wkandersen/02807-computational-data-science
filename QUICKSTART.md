@@ -41,9 +41,10 @@ python scripts/analyze_songs.py \
 ### Using Python Code
 
 ```python
+import pandas as pd
+
 from sentiment_analysis.analyzer import SentimentAnalyzer
 from sentiment_analysis.data_utils import create_sample_data
-import pandas as pd
 
 # Create sample data
 df = create_sample_data()
@@ -91,6 +92,7 @@ results.to_csv('results.csv', index=False)
 ### Visualize Results
 
 ```python
+import matplotlib.pyplot as plt
 from sentiment_analysis.visualization import plot_sentiment_distribution
 
 fig = plot_sentiment_distribution(results)

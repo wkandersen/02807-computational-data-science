@@ -10,7 +10,17 @@ from pathlib import Path
 
 
 def validate_structure():
-    """Validate project structure."""
+    """
+    Validate that all required project files and directories exist.
+    
+    This function checks for the presence of all necessary directories and files
+    in the project structure, including source code, tests, notebooks, scripts,
+    configuration files, and documentation.
+    
+    Returns:
+        bool: True if all required files and directories exist, False otherwise.
+        Prints detailed validation results to stdout.
+    """
     root = Path(__file__).parent
     
     # Required directories
