@@ -1,0 +1,12 @@
+# Git attributes for the project
+
+# Jupyter notebooks
+*.ipynb linguist-documentation
+
+# Data files
+*.csv linguist-generated
+*.json linguist-generated
+*.txt linguist-vendored=false
+
+# Documentation
+*.md linguist-documentation
